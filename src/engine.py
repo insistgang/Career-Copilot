@@ -105,6 +105,7 @@ class ResumeCompiler:
       period: "{edu['period']}",
       gpa: "{edu.get('gpa', '')}",
       advisor: "{edu.get('advisor', '')}",
+      thesis: "{edu.get('thesis', '')}",
       honors: ({honors_str})
     ),\n"""
         doc += "  ),\n  skills: (\n"

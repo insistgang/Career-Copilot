@@ -104,18 +104,14 @@ awards:
 
 publications_and_ip:
   papers:
-    - title: "基于 YOLOv11 深度学习的智慧城市井盖细粒度状态检测系统"
-      status: "在投 / 中文核心"
-      role: "第一作者"
-      keywords: ["YOLOv11", "小目标检测", "高分辨率特征金字塔 P2", "AMSFF", "智慧城市"]
     - title: "面向无人机航拍的高分辨率违章建筑小目标检测与边缘部署研究"
-      status: "硕士学位论文核心 / 在研"
+      status: "在研 / 投稿推进中 (第一作者)"
       role: "第一作者"
-      keywords: ["无人机遥感", "YOLOv11s-seg", "Jetson Orin Nano", "领域自适应"]
+      keywords: ["无人机遥感", "YOLOv11s-seg", "Jetson Orin Nano", "小目标检测", "边缘计算"]
     - title: "基于视频图像的道路路面缺陷检测与 A4 纸参照物面积测算技术研究"
-      status: "已完成"
+      status: "在研 / 投稿推进中 (第一作者)"
       role: "第一作者"
-      keywords: ["路面病害", "面积测量", "YOLO", "智能巡检"]
+      keywords: ["路面病害", "透视标定", "面积测量", "智能巡检"]
   software_copyrights:
     - name: "研发费用智能核算与报表自动化 RPA 软件 V1.0"
       number: "登记完成 (软著)"

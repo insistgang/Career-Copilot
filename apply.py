@@ -31,7 +31,7 @@ def main():
     # 针对性组装高密度、全铺满、强量化单页数据
     tailored_data = {
         "basic_info": loader.profile_data["basic_info"],
-        "target_title": "AI 算法工程师 / 边缘智能与大模型推理优化" if args.mode == "industry" else "博士研究生申请人 (计算机视觉与端侧大模型方向)",
+        "target_title": "AI 算法工程师 / 前置部署工程师 (FDE) / 大模型与边缘端落地",
         "education": [
             {
                 "school": "上海工程技术大学",

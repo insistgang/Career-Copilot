@@ -51,21 +51,21 @@ def main():
             }
         ],
         "skills": {
+            "ai_native": {
+                "title": "AI-Native 研发与 Agent 生态",
+                "description": "深度实践 AI-Native 研发范式，精通 Claude Code、Codex、Google Antigravity (agy)、Grok、MiniMax、GLM 及 Kimi 等前沿 AI Agent 工具链与 MCP 协议；具备极强的多智能体编排与系统级落地能力，独立/主导完成视频多模态检索 (understand_mov_v2)、网络安全研判、行动工作台等多个复杂系统的端到端敏捷交付。"
+            },
             "inference": {
                 "title": "推理优化与端侧部署",
                 "description": "主攻 LLM INT4 权重量化（Qwen2-7B 显存 14GB 压缩至 5.8GB，单卡 42 tokens/s）、QLoRA 微调、vLLM/TensorRT FP16/INT8 算子融合与 NVIDIA Jetson Orin Nano 边缘端部署调优，具备工业级单卡离线推理实战经验。"
             },
             "llm_agent": {
-                "title": "大模型与多模态 (LLM/VLM/Agent)",
-                "description": "精通 Qwen2 / Qwen2.5-VL 多模态微调、RAG 检索增强架构 (ChromaDB 8万+条目向量检索与重排)、Prompt 工程及 4 层多智能体 (Multi-Agent) 协同研判架构设计。"
+                "title": "大模型与多模态 (LLM/VLM)",
+                "description": "精通 Qwen2 / Qwen2.5-VL 多模态微调、RAG 检索增强架构 (ChromaDB 8万+条目向量检索与重排)、Prompt 工程及 4 层多智能体 (Multi-Agent) 协同架构设计。"
             },
             "cv_dl": {
                 "title": "计算机视觉与深度学习",
                 "description": "精通 PyTorch、YOLOv8/v11（引入 P2 高分辨率金字塔、AMSFF 自适应多尺度融合、DCH 解耦头、YOLO-seg 实例分割）、ReID 目标追踪、单目几何测距与 OpenCV 视觉处理。"
-            },
-            "engineering": {
-                "title": "工程开发与全栈工具链",
-                "description": "精通 Python、C/C++；熟练掌握 Linux/Shell 生产开发环境、FastAPI 异步高并发后端、React 前端开发、SQLite FTS5 全文检索及 Typst/Markdown 自动化文档编译。"
             }
         },
         "selected_projects": [
@@ -115,7 +115,7 @@ def main():
             }
         ],
         "awards_summary": [
-            "【国家级竞赛】全国大学生数学建模竞赛【国家二等奖】(队长)、“华为杯”中国研究生网络安全创新大赛【国家三等奖】(队长)、集成电路 EDA 精英挑战赛【国家三等奖】、“华为杯”中国研究生 AI 创新大赛【国家三等奖】",
+            "【国家级竞赛】全国大学生数学建模竞赛【国家二等奖】(队长)、“华为杯”中国研究生网络安全创新大赛【国家三等奖】(队长)、“华为杯”中国研究生 AI 创新大赛【国家三等奖】(队长)、集成电路 EDA 精英挑战赛【国家三等奖】",
             "【省部级竞赛】2026 第二十届研电赛【省级二等奖】(LinkAble)、2026 西门子杯智能制造挑战赛【省级二等奖】(答辩82分)、2025 西门子杯【省级一等奖】、第十九届研电赛【省级三等奖】、上海市研究生智慧城市大赛【省级三等奖】、上海市大学生行业分析大赛【银奖/省二】"
         ],
         "papers_summary": [

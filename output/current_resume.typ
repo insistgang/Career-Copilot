@@ -3,7 +3,7 @@
 #show: resume.with(
   name: "刘钢",
   english_name: "Leo",
-  title: "AI 算法工程师 / 前置部署工程师 (FDE) / 大模型与边缘端落地",
+  title: "智能体研发工程师 / AI 应用模型开发工程师",
   phone: "+86 159-9519-7640",
   email: "insistgang@163.com",
   github: "https://github.com/insistgang",
@@ -31,20 +31,20 @@
   ),
   skills: (
     (
-      title: "AI-Native 研发与 Agent 生态",
-      description: "深度实践 AI-Native 研发范式，精通 Claude Code、Codex、Google Antigravity (agy)、Grok、MiniMax、GLM 及 Kimi 等前沿 AI Agent 工具链与 MCP 协议；具备极强的多智能体编排与系统级落地能力，独立/主导完成视频多模态检索 (understand_mov_v2)、网络安全研判、行动工作台等多个复杂系统的端到端敏捷交付。"
+      title: "大模型量化微调与推理加速",
+      description: "深入理解 Transformer 架构与注意力机制；主攻 Qwen2-7B 的 INT4 极限量化部署（显存 14G 压至 5.8G，单卡 42 tokens/s）、QLoRA 微调、vLLM PagedAttention 与 TensorRT 算子融合加速。"
     ),
     (
-      title: "推理优化与端侧部署",
-      description: "主攻 LLM INT4 权重量化（Qwen2-7B 显存 14GB 压缩至 5.8GB，单卡 42 tokens/s）、QLoRA 微调、vLLM/TensorRT FP16/INT8 算子融合与 NVIDIA Jetson Orin Nano 边缘端部署调优，具备工业级单卡离线推理实战经验。"
+      title: "计算机视觉与轻量化小模型",
+      description: "精通 YOLOv8/v11 结构改进（P2 高分辨率金字塔、AMSFF 自适应融合、解耦头）、ReID 消除重复计数、单目几何测距与 OpenCV 图像处理，具备工业复杂背景下的视觉算法落地能力。"
     ),
     (
-      title: "大模型与多模态 (LLM/VLM)",
-      description: "精通 Qwen2 / Qwen2.5-VL 多模态微调、RAG 检索增强架构 (ChromaDB 8万+条目向量检索与重排)、Prompt 工程及 4 层多智能体 (Multi-Agent) 协同研判架构设计。"
+      title: "边缘端与嵌入式智能部署",
+      description: "精通 NVIDIA Jetson Orin Nano 边缘端部署与 TensorRT INT8 优化，利用统一内存零拷贝与 CUDA Stream 异步流水线调优，实现 45+ FPS 实时低延迟推理。"
     ),
     (
-      title: "计算机视觉与深度学习",
-      description: "精通 PyTorch、YOLOv8/v11（引入 P2 高分辨率金字塔、AMSFF 自适应多尺度融合、DCH 解耦头、YOLO-seg 实例分割）、ReID 目标追踪、单目几何测距与 OpenCV 视觉处理。"
+      title: "智能体编排与 AI-Native 交付",
+      description: "精通 Python 与 C++，掌握 LangChain/AutoGen 多智能体协同范式；熟练使用 Claude Code、Codex、agy 等前沿工具链，具备传统工业制造场景下快速交付生产级系统的工程实力。"
     ),
   ),
   projects: (
@@ -71,17 +71,6 @@
       )
     ),
     (
-      name: "K12 个性化自适应学习与智能辅导系统",
-      role: "队长 / 架构与大模型研发",
-      period: "2025.07 - 2025.09",
-      tag: "“华为杯”中国研究生 AI 创新大赛 · 国家三等奖 (队长)",
-      tags: ("React 18", "Vite", "Ant Design", "FastAPI", "知识图谱", "自适应推荐", "智能批改"),
-      points: (
-      "主导研发基于大语言模型的自适应 K12 智能辅导平台，构建语文学科细粒度知识图谱，实现对话式答疑、错题因果归因与作文多维智能批改。",
-      "设计基于学情画像与艾宾浩斯遗忘曲线的自适应出题引擎；基于 React 18 + Ant Design 构建数据看板，端到端延迟 < 800ms，荣获全国三等奖。",
-      )
-    ),
-    (
       name: "电路系统框图多模态智能识别与逻辑解析系统",
       role: "核心成员 / 多模态模型研发",
       period: "2025.09 - 2025.11",
@@ -90,6 +79,17 @@
       points: (
       "提出“YOLOv8 空间几何定位 + Qwen2.5-VL 拓扑语义理解”级联架构，元件定位准确率达 95%+，电路逻辑拓扑推断 F1 达到 0.87。",
       "针对电路图元构建专用图文微调集并训练 LoRA 适配器，实现原理图从图像输入到标准网表 (Netlist) 逆向生成的端到端全流程自动化。",
+      )
+    ),
+    (
+      name: "K12 个性化自适应学习与智能辅导系统",
+      role: "队长 / 架构与大模型研发",
+      period: "2025.07 - 2025.09",
+      tag: "“华为杯”中国研究生 AI 创新大赛 · 国家三等奖 (队长)",
+      tags: ("React 18", "Vite", "Ant Design", "FastAPI", "知识图谱", "自适应推荐", "智能批改"),
+      points: (
+      "主导研发基于大语言模型的自适应 K12 智能辅导平台，构建语文学科细粒度知识图谱，实现对话式答疑、错题因果归因与作文多维智能批改。",
+      "设计基于学情画像与艾宾浩斯遗忘曲线的自适应出题引擎；基于 React 18 + Ant Design 构建数据看板，端到端延迟 < 800ms，荣获全国三等奖。",
       )
     ),
   ),

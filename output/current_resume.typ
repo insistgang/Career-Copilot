@@ -2,6 +2,7 @@
 
 #show: resume.with(
   name: "刘钢",
+  english_name: "Leo (Francis Miller)",
   title: "大模型推理优化 / 边缘 AI 算法工程师",
   phone: "+86 159-9519-7640",
   email: "insistgang@163.com",

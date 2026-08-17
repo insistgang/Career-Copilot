@@ -88,6 +88,7 @@ class ResumeCompiler:
 
 #show: resume.with(
   name: "{b.get('name', '刘钢')}",
+  english_name: "{b.get('english_name', '')}",
   title: "{data.get('target_title', b.get('title', 'AI 算法工程师'))}",
   phone: "{b.get('phone', '')}",
   email: "{b.get('email', '')}",

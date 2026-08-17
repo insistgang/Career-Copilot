@@ -149,10 +149,12 @@ class Dispatcher:
             "agently-cli", "message", "+send",
             "--to", to,
             "--subject", subject,
-            "--body", body
+            "--body", body,
+            "--confirmed"
         ]
         if attachment_path and os.path.exists(attachment_path):
-            cmd.extend(["--attach", str(attachment_path)])
+            rel_path = os.path.relpath(attachment_path, os.getcwd())
+            cmd.extend(["--attachment", rel_path])
         
         try:
             print(f"🚀 正在通过 agently-mail 发送至 {to}...")

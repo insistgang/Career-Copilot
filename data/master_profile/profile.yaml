@@ -1,0 +1,123 @@
+basic_info:
+  name: "刘钢"
+  english_name: "Leo (Francis Miller)"
+  title: "AI 算法工程师 / 边缘智能与大模型推理优化 / 博士申请人"
+  phone: "+86 159-9519-7640"
+  email: "insistgang@163.com"
+  wechat: "insistgang"
+  location: "上海"
+  github: "https://github.com/insistgang"
+  blog: "https://insistgang.top"
+  political_status: "中共党员 (2021年入党，党员之星)"
+  student_cadre: "电子信息 3 班团支书 (团干部示范典型，带领班级获“活力团支部”)"
+  summary: "具备“模型训练/微调 → 极致量化 (INT4/剪枝) → 端侧/边缘 (Jetson/TensorRT) 部署”端到端全栈工程能力与央企研究所落地实战经验；拥有国家级竞赛奖项 4 项、省部级 6 项。"
+
+education:
+  - school: "上海工程技术大学"
+    college: "电子电气工程学院"
+    degree: "硕士 (电子信息 - 人工智能方向)"
+    period: "2024.09 - 2027.06"
+    gpa: "3.36 / 4.0"
+    advisor: "刘翔 教授"
+    thesis_title: "《面向违法建筑识别的多尺度图像检测方法研究》"
+    honors:
+      - "硕士研究生学业一等奖学金"
+      - "优秀共产党员 / 党员之星"
+      - "三好学生 / 优秀共青团员 / 优秀团干部"
+      - "团干部示范典型 / 活力团支部班长/团支书"
+  - school: "宿迁学院"
+    college: "信息工程学院"
+    degree: "学士 (信息与计算科学)"
+    period: "2017.09 - 2021.06"
+    gpa: "3.23 / 4.0"
+    honors:
+      - "校级优秀毕业设计"
+      - "中共党员 (2021)"
+
+skills:
+  inference_and_deployment:
+    title: "推理优化与端侧部署"
+    tags: ["LLM INT4量化", "QLoRA", "vLLM", "TensorRT", "ONNX Runtime", "Jetson Orin Nano", "单卡离线推理", "模型剪枝"]
+    description: "主攻 LLM INT4 权重量化（Qwen2-7B 显存 14GB 压缩至 5.8GB，单卡 42 tokens/s）、QLoRA 微调、vLLM/TensorRT FP16/INT8 编译导出与 NVIDIA Jetson Orin Nano 边缘端部署调优。"
+  
+  llm_vlm_agent:
+    title: "大模型与多模态 (LLM/VLM/Agent)"
+    tags: ["Qwen2", "Qwen2.5-VL", "多模态微调", "RAG 架构", "ChromaDB", "Multi-Agent 协同", "Prompt 工程", "LangChain"]
+    description: "精通 Qwen2 / Qwen2.5-VL 多模态微调、RAG 检索增强架构 (ChromaDB 8万+条目向量检索)、Prompt 工程及 4 层多智能体 (Multi-Agent) 协同架构设计。"
+  
+  computer_vision:
+    title: "计算机视觉与深度学习"
+    tags: ["PyTorch", "YOLOv8", "YOLOv11", "小目标检测", "实例分割", "旋转框 OBB", "单目测距", "ReID目标追踪", "OpenCV"]
+    description: "熟练掌握 YOLO 系列（P2 高分辨率特征金字塔、自适应特征融合 AMSFF、解耦检测头 DCH、YOLO-seg 实例分割）、ReID 消除重复计数、单目测距与 OpenCV 视觉处理。"
+  
+  engineering_and_tools:
+    title: "工程开发与全栈工具链"
+    tags: ["Python", "C/C++", "Linux", "Git", "FastAPI", "React", "SQLite FTS5", "Typst", "Docker", "agently-mail"]
+    description: "精通 Python 与现代 C/C++；熟练掌握 Linux/Shell 生产开发、FastAPI 高并发异步后端、React 前端开发、SQLite FTS5 全文检索及 Typst 自动化文档编译。"
+
+awards:
+  national:
+    - name: "全国大学生数学建模竞赛（华为杯·第22届）"
+      level: "国家二等奖"
+      year: "2025"
+      role: "队长"
+    - name: "“华为杯”第四届中国研究生网络安全创新大赛"
+      level: "国家三等奖"
+      year: "2025"
+      role: "队长 (AI盾卫队)"
+    - name: "全国大学生集成电路 EDA 精英创新赛"
+      level: "国家三等奖"
+      year: "2025"
+      role: "核心成员 (码上代码队)"
+    - name: "“华为杯”第七届中国研究生人工智能创新大赛"
+      level: "国家三等奖"
+      year: "2025"
+      role: "核心成员 (智研四侠)"
+  provincial:
+    - name: "2025 第十九届 CIMC“西门子杯”中国智能制造挑战赛 (信息化网络化赛道)"
+      level: "省级一等奖"
+      year: "2025"
+    - name: "2026 第二十届 CIMC“西门子杯”中国智能制造挑战赛"
+      level: "省级二等奖 (答辩 82 分)"
+      year: "2026"
+    - name: "第二十届中国研究生电子设计竞赛 (LinkAble 共感)"
+      level: "省级二等奖"
+      year: "2026"
+    - name: "第十九届中国研究生电子设计竞赛"
+      level: "省级三等奖"
+      year: "2025"
+    - name: "第十一届中国研究生智慧城市技术与创意设计大赛"
+      level: "省级三等奖"
+      year: "2025"
+      role: "智城守护者团队"
+    - name: "第二届 / 第三届上海市大学生行业分析大赛"
+      level: "银奖 (省二) / 省三等奖"
+      year: "2025"
+  university:
+    - name: "上海工程技术大学“AI智能体”创新设计大赛"
+      level: "校级二等奖"
+      year: "2025"
+    - name: "班级获评上海工程技术大学“活力团支部”"
+      level: "校级集体荣誉"
+      year: "2025"
+      role: "团支书"
+
+publications_and_ip:
+  papers:
+    - title: "基于 YOLOv11 深度学习的智慧城市井盖细粒度状态检测系统"
+      status: "在投 / 中文核心"
+      role: "第一作者"
+      keywords: ["YOLOv11", "小目标检测", "高分辨率特征金字塔 P2", "AMSFF", "智慧城市"]
+    - title: "面向无人机航拍的高分辨率违章建筑小目标检测与边缘部署研究"
+      status: "硕士学位论文核心 / 在研"
+      role: "第一作者"
+      keywords: ["无人机遥感", "YOLOv11s-seg", "Jetson Orin Nano", "领域自适应"]
+    - title: "基于视频图像的道路路面缺陷检测与 A4 纸参照物面积测算技术研究"
+      status: "已完成"
+      role: "第一作者"
+      keywords: ["路面病害", "面积测量", "YOLO", "智能巡检"]
+  software_copyrights:
+    - name: "研发费用智能核算与报表自动化 RPA 软件 V1.0"
+      number: "登记完成 (软著)"
+      year: "2024"
+      role: "独立开发"

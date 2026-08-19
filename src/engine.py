@@ -164,3 +164,62 @@ class Dispatcher:
         except subprocess.CalledProcessError as e:
             print(f"❌ 邮件发送失败: {e.stderr.strip()}")
             return False
+
+
+class TimingAdvisor:
+    """Evaluates the optimal delivery timing for email and job applications based on HR workflows."""
+
+    @staticmethod
+    def evaluate_current_timing() -> Dict[str, Any]:
+        from datetime import datetime
+        now = datetime.now()
+        weekday = now.weekday()  # 0: Mon, 1: Tue, ..., 6: Sun
+        hour = now.hour
+        minute = now.minute
+        time_str = now.strftime("%Y-%m-%d %H:%M:%S (星期%w)" if "%w" != "" else "%Y-%m-%d %H:%M:%S")
+        weekday_names = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        current_day_name = weekday_names[weekday]
+
+        # S-Grade Golden Windows:
+        # Tue-Thu 09:00-10:30, 14:00-15:30
+        is_tue_thu = weekday in [1, 2, 3]
+        is_morning_s = (hour == 9) or (hour == 10 and minute <= 30)
+        is_afternoon_s = (hour == 14) or (hour == 15 and minute <= 30)
+        
+        # A-Grade Good Windows:
+        # Mon 14:00-17:30
+        # Tue-Thu 10:30-12:00, 15:30-18:00, 19:30-21:00
+        # Fri 09:00-11:30
+        is_mon_afternoon = (weekday == 0 and 14 <= hour < 18)
+        is_fri_morning = (weekday == 4 and (9 <= hour < 11 or (hour == 11 and minute <= 30)))
+        is_midweek_normal = (is_tue_thu and (10 < hour < 12 or 15 < hour < 18 or (19 <= hour <= 20) or (hour == 21 and minute == 0)))
+
+        # D-Grade Bad Windows:
+        # Late Night 22:30 - 08:30, Weekends
+        is_weekend = weekday in [5, 6]
+        is_late_night = (hour >= 22 or hour < 8)
+
+        if (is_tue_thu and (is_morning_s or is_afternoon_s)):
+            level = "S级 (🌟 黄金爆发时段)"
+            recommendation = "【极力推荐立即投递】当前正处于 HR 打开邮箱置顶处理与集中初筛的高峰期，曝光率最高！"
+            is_optimal = True
+        elif is_mon_afternoon or is_fri_morning or is_midweek_normal:
+            level = "A级 (🟢 良好活跃时段)"
+            recommendation = "【推荐投递】当前处于正常工作或晚间直聘活跃期，HR 会在常规工作流中查看。"
+            is_optimal = True
+        elif is_weekend or is_late_night:
+            level = "D级 (🔴 沉底风险时段)"
+            recommendation = "【建议稍后或定时发送】当前为周末或深夜，邮件容易被夜间系统消息覆盖。建议在明天上午 09:00 或下午 14:00 发送！"
+            is_optimal = False
+        else:
+            level = "B级 (🟡 普通时段)"
+            recommendation = "【可以投递】建议确保邮件标题格式规范以突出重点。"
+            is_optimal = True
+
+        return {
+            "current_time": f"{now.strftime('%Y-%m-%d %H:%M')} ({current_day_name})",
+            "level": level,
+            "is_optimal": is_optimal,
+            "recommendation": recommendation
+        }
+

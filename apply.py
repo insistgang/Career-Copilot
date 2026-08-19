@@ -9,7 +9,7 @@ Usage:
 import sys
 import argparse
 from pathlib import Path
-from src.engine import ProfileLoader, ResumeCompiler, Dispatcher
+from src.engine import ProfileLoader, ResumeCompiler, Dispatcher, TimingAdvisor
 
 def main():
     parser = argparse.ArgumentParser(description="Career-Copilot: AI 职位匹配与简历智能代发系统")
@@ -20,9 +20,13 @@ def main():
     
     args = parser.parse_args()
     
+    timing = TimingAdvisor.evaluate_current_timing()
+
     print("=" * 60)
     print("🎯 Career-Copilot 智能投递与对齐引擎启动")
     print(f"📌 当前运行模式: {'🏢 企业招聘模式 (Industry)' if args.mode == 'industry' else '🎓 学术申博模式 (Academic)'}")
+    print(f"⏰ 投递时机评估: {timing['current_time']} ➔ {timing['level']}")
+    print(f"💡 时机建议: {timing['recommendation']}")
     print("=" * 60)
 
     loader = ProfileLoader()

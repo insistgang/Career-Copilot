@@ -68,6 +68,9 @@ class NetEase163Reader:
         mail = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
         try:
             mail.login(self.email_address, self.auth_code)
+            # NetEase 163 IMAP requires RFC 2971 ID extension handshake
+            imaplib.Commands["ID"] = ("AUTH")
+            mail._simple_command("ID", '("name" "CareerCopilot" "contact" "' + self.email_address + '" "version" "1.0.0")')
         except Exception as e:
             raise RuntimeError(f"163 邮箱登录失败 (请检查授权码是否正确): {e}")
 

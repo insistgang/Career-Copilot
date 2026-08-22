@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+"""
+Career-Copilot: Check NetEase 163 mailbox for recent recruitment/interview emails.
+"""
+
 import sys
 import argparse
 from pathlib import Path
